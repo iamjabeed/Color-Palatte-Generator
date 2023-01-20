@@ -89,8 +89,8 @@ body {
     display: block;
     position: fixed;
     left: 50%;
-    bottom: 20px;
-    transform: translate(-50%, -20px);
+    bottom: 40px;
+    transform: translate(-50%, -40px);
     cursor: pointer;
 }
 
