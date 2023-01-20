@@ -3,7 +3,7 @@ const btn = document.querySelector(".btn");
 
 function boxGenerate() {
   containerEl.innerHTML = "";
-  for (let i = 0; i < 18; i++) {
+  for (let i = 0; i < 24; i++) {
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     const colorCode = `#${randomColor} `;
     // console.log(colorCode);
