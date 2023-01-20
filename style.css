@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: monospace, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+    color: rgb(232, 47, 109);
+}
+
+body {
+    background: #e4e6ea;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 20px;
+
+}
+
+.color-container {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.color:hover {
+    filter: brightness(120%);
+}
+
+.color-container .color {
+    background-color: rgb(172, 144, 7);
+    height: 140px;
+    width: 160px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: filter .4s ease-in-out;
+}
+
+.container .color-container span {
+    display: block;
+}
+
+.color-container:active {
+    transform: scale(95%);
+
+}
+
+.hex-code {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #1f1f1d 0%, #ee3f33 51%, #7f1994 100%);
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.35s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    display: block;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -20px);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .color-container {
+        width: 140px;
+        height: 160px;
+    }
+
+    .color-container .color {
+        background-color: rgb(172, 144, 7);
+        height: 120px;
+        width: 120px;
+
+    }
+}
